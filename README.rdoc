@@ -1,2 +1,2 @@
 == Steampunk Curse Generator
-&copy; 2015 Lori Holuta and Kate Lane
+Copyright 2015 Lori Holuta and Kate Lane
