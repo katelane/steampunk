@@ -1,0 +1,12 @@
+<h1>Each curse ends with... an ending:</h1>
+
+<ul id="endings">
+  <% @endings.each do |ending| %>
+    <li>
+      <%= link_to ending.body, ending_path(ending) %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Create a New Ending", new_ending_path %> |
+<%= link_to "Home", root_path %>

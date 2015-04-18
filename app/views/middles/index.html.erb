@@ -1,0 +1,12 @@
+<h1>Each curse has a middle in... the middle:</h1>
+
+<ul id="middles">
+  <% @middles.each do |middle| %>
+    <li>
+      <%= link_to middle.body, middle_path(middle) %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Create a New Middle", new_middle_path %> |
+<%= link_to "Home", root_path %>
