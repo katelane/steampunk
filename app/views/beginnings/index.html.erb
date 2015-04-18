@@ -1,0 +1,12 @@
+<h1>Each curse begins with... a beginning:</h1>
+
+<ul id="beginnings">
+  <% @beginnings.each do |beginning| %>
+    <li>
+      <%= link_to beginning.body, beginning_path(beginning) %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Create a New Beginning", new_beginning_path %> |
+<%= link_to "Home", root_path %>
