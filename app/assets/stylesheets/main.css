@@ -1,0 +1,42 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #5d360d;
+  font-family: 'Goudy Bookletter 1911', serif;
+  color: #000;
+  background-image: url("leather_bkg.jpg");
+}
+
+nav {
+  height: 100px;
+  float: right;
+}
+
+.container {
+  background-image: url("angrymanframe.png");
+  width: 1117px;
+  height: 634px;
+  margin: 0 auto;
+}
+
+footer {
+  width: 80%;
+  margin: -50px auto 0 auto;
+  text-align: center;
+}
+
+footer p {
+  line-height: .05em;
+  color: #77562b;
+}
+
+footer img {
+  border: 2px solid #77562b;
+  display: block;
+  margin: 0 auto;
+}
