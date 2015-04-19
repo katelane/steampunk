@@ -1,12 +1,22 @@
-<h1>Each curse begins with... a beginning:</h1>
+<div class="adminheader"></div>
+<div class="admin">
 
-<ul id="beginnings">
-  <% @beginnings.each do |beginning| %>
-    <li>
-      <%= link_to beginning.body, beginning_path(beginning) %>
-    </li>
-  <% end %>
-</ul>
+  <div class="adminside">
+    <h4>These are all the beginnings in the database. Click individual beginnings to edit or delete them.</h4>
 
-<%= link_to "Create a New Beginning", new_beginning_path %> |
-<%= link_to "Home", root_path %>
+    <strong><%= link_to "Create a New Beginning", new_beginning_path %></strong><br>
+    <%= link_to "See all Middles", middles_path %><br>
+    <%= link_to "See all Endings", endings_path %><br>
+    <%= link_to "Return Home", root_path %>
+  </div>
+
+  <h1>Each curse begins with... a beginning:</h1>
+  <ul id="beginnings">
+    <% @beginnings.each do |beginning| %>
+      <li>
+        <%= link_to beginning.body, beginning_path(beginning) %>
+      </li>
+    <% end %>
+  </ul>
+
+</div>

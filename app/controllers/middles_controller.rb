@@ -11,7 +11,6 @@ class MiddlesController < ApplicationController
   def create
     @middle = Middle.new(middle_params)
     if @middle.save
-      flash[:notice] = "A new middle has been created."
       redirect_to middles_path
     else
       render :new
@@ -29,7 +28,6 @@ class MiddlesController < ApplicationController
   def update
     @middle = Middle.find params[:id]
     if @middle.update_attributes(middle_params)
-      flash[:notice] = "Middle has been updated."
       redirect_to middle_path(@middle)
     else
       render :edit
@@ -40,7 +38,6 @@ class MiddlesController < ApplicationController
   def destroy
     middle = Middle.find params[:id]
     middle.destroy
-    flash[:notice] = "The middle '#{middle}' has been deleted."
     redirect_to middles_path
   end
 

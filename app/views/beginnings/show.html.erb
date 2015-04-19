@@ -1,4 +1,14 @@
-<h1>Beginning:</h1>
-<p><%= @beginning.body %></p>
-<%= link_to "Edit", edit_beginning_path(@beginning) %> |
-<%= link_to "Back to Beginnings List", beginnings_path %>
+<div class="adminheader"></div>
+<div class="admin">
+
+  <div class="adminside">
+    <h4>All curses have a beginning, middle and ending...</h4>
+  </div>
+
+  <h1>Your curse kicks things off with:</h1>
+  <h3><%= @beginning.body %></h3>  
+  <%= link_to "Edit", edit_beginning_path(@beginning) %> |
+  <%= link_to "Delete", beginning_path(@beginning), method: :delete, data: {confirm: "Really delete this item?"}%> |
+  <%= link_to "Return to all Beginnings", beginnings_path %>
+
+</div>

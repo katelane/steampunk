@@ -1,12 +1,22 @@
-<h1>Each curse ends with... an ending:</h1>
+<div class="adminheader"></div>
+<div class="admin">
 
-<ul id="endings">
-  <% @endings.each do |ending| %>
-    <li>
-      <%= link_to ending.body, ending_path(ending) %>
-    </li>
-  <% end %>
-</ul>
+  <div class="adminside">
+    <h4>These are all the endings in the database. Click individual endings to edit or delete them.</h4>
 
-<%= link_to "Create a New Ending", new_ending_path %> |
-<%= link_to "Home", root_path %>
+    <strong><%= link_to "Create a New Ending", new_ending_path %></strong><br>
+    <%= link_to "See all Beginnings", beginnings_path %><br>
+    <%= link_to "See all Middles", middles_path %><br>
+    <%= link_to "Return Home", root_path %>
+  </div>
+
+  <h1>Each curse ends with... an ending:</h1>
+  <ul id="endings">
+    <% @endings.each do |ending| %>
+      <li>
+        <%= link_to ending.body, ending_path(ending) %>
+      </li>
+    <% end %>
+  </ul>
+
+</div>

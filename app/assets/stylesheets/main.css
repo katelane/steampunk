@@ -24,6 +24,45 @@ nav {
   margin: 0 auto;
 }
 
+.adminheader {
+  background-image: url("adminframe.png");
+  margin: 0 auto;
+  height: 150px;
+}
+
+.admin {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px;
+  background: #e7d4a7;
+  border: 5px solid #77562b;
+  border-radius: 25px;
+  min-height: 300px;
+}
+
+.admin a {
+  text-decoration: none;
+  color: #6e5e4c;
+  font-size: 1.1em;
+}
+
+.admin a:hover {
+  text-decoration: none;
+  color: #de7303;
+}
+
+.adminside {
+  float: right;
+  width: 30%;
+  text-align: center;
+  border-left: 1px solid #d9b073;
+  padding: 10px;
+}
+
+.adminside p {
+  font-size: .8em;
+}
+
 footer {
   width: 80%;
   margin: -50px auto 0 auto;
