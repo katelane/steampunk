@@ -32,6 +32,13 @@ nav {
   margin: 0 auto;
 }
 
+.curse {
+  padding-top: 200px;
+  margin-left: 500px;
+  margin-right: 150px;
+  font-size: 1.2em;
+}
+
 .adminheader {
   background-image: url("adminframe.png");
   margin: 0 auto;
