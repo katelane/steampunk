@@ -1,4 +1,5 @@
 class MiddlesController < ApplicationController
+  before_filter :require_login, only: [:index, :new, :create, :edit, :update, :destroy]
 
   def index
     @middles = Middle.all

@@ -1,0 +1,26 @@
+<div class="adminheader"></div>
+<div class="admin">
+  <div class="adminside">
+    <img src="assets/smallangryman.png" border="0" alt="Small angry man"><br>
+    <h4>Greetings. Unless you have specifically been given permission by the authors of this site to be a contributor, please <%= link_to "return to the homepage", root_path %>.</h4>
+  </div>
+
+  <h1>Login</h1>
+
+<%= form_tag author_sessions_path, method: :post do %>
+  <div class="field">
+    <%= label_tag :email %>
+    <%= text_field_tag :email %>
+    <br/>
+  </div>
+  <div class="field">
+    <%= label_tag :password %>
+    <%= password_field_tag :password %>
+    <br/>
+  </div>
+  <div class="actions">
+    <%= submit_tag "Login" %>
+  </div>
+<% end %>
+
+</div>

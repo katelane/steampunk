@@ -1,0 +1,21 @@
+<div class="adminheader"><%= render partial: 'shared/login' %></div>
+<div class="admin">
+  <div class="adminside">
+  <strong><%= link_to 'Add a new Author', new_author_path %></strong><br>
+  <%= link_to "See all Beginnings", beginnings_path %><br>
+  <%= link_to "See all Middles", middles_path %><br>
+  <%= link_to "See all Endings", endings_path %><br>
+  <%= link_to "Return Home", root_path %>
+  </div>
+  <p id="notice"><%= notice %></p>
+
+  <h1>Site Authors</h1>
+    <% @authors.each do |author| %>
+    Username: <%= author.username %><br>
+    Email: <%= author.email %><br>
+    <%= link_to 'Show', author %> |
+    <%= link_to 'Edit', edit_author_path(author) %> |
+    <%= link_to 'Delete', author, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <br><br>
+    <% end %>
+</div>
