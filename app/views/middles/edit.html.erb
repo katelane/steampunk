@@ -1,4 +1,4 @@
-<div class="adminheader"></div>
+<div class="adminheader"><%= render partial: 'shared/login' %></div>
 <div class="admin">
 
   <div class="adminside">
@@ -6,7 +6,7 @@
     <p>The three parts of each curse will be generated at random, so be sure to write parts that can function as independent pieces!</p>
     <p><strong>Important:</strong> punctuation is not built in between the curse sections &mdash; you must include punctuation (ex. a comma after a beginning or an exclamation point after an ending) in your text.</p>
   </div>
-  
+
   <h1>Edit the middle:</h1>
   <%= form_for(@middle) do |f| %>
 

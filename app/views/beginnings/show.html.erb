@@ -1,4 +1,5 @@
-<div class="adminheader"></div>
+<% if logged_in? %>
+<div class="adminheader"><%= render partial: 'shared/login' %></div>
 <div class="admin">
 
   <div class="adminside">
@@ -6,9 +7,10 @@
   </div>
 
   <h1>Your curse kicks things off with:</h1>
-  <h3><%= @beginning.body %></h3>  
+  <h3><%= @beginning.body %></h3>
   <%= link_to "Edit", edit_beginning_path(@beginning) %> |
   <%= link_to "Delete", beginning_path(@beginning), method: :delete, data: {confirm: "Really delete this item?"}%> |
   <%= link_to "Return to all Beginnings", beginnings_path %>
 
 </div>
+<% end %>

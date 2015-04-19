@@ -17,6 +17,14 @@ nav {
   float: right;
 }
 
+.flash {
+  text-align: right;
+  padding-right: 50px;
+  background: #000;
+  font-style: italic;
+  color: #d9b073;
+}
+
 .container {
   background-image: url("angrymanframe.png");
   width: 1117px;
@@ -27,7 +35,22 @@ nav {
 .adminheader {
   background-image: url("adminframe.png");
   margin: 0 auto;
+  padding-right: 10px;
   height: 150px;
+  text-align: right;
+  font-style: italic;
+  color: #d9b073;
+}
+
+.adminheader a {
+  text-decoration: none;
+  color: #6e5e4c;
+  font-size: 1.1em;
+}
+
+.adminheader a:hover {
+  text-decoration: none;
+  color: #de7303;
 }
 
 .admin {

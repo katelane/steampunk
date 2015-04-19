@@ -1,4 +1,4 @@
-<div class="adminheader"></div>
+<div class="adminheader"><%= render partial: 'shared/login' %></div>
 <div class="admin">
 
   <div class="adminside">
@@ -7,6 +7,7 @@
     <strong><%= link_to "Create a New Middle", new_middle_path %></strong><br>
     <%= link_to "See all Beginnings", beginnings_path %><br>
     <%= link_to "See all Endings", endings_path %><br>
+    <%= link_to "Site Authors", authors_path %><br>
     <%= link_to "Return Home", root_path %>
   </div>
 
