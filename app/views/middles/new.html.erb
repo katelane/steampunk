@@ -1,7 +1,18 @@
-<h1>Create a new middle:</h1>
-<%= form_for(@middle) do |f| %>
+<div class="adminheader"></div>
+<div class="admin">
 
-  <p><%= f.text_area :body %></p>
-  <p><%= f.submit 'Save' %></p>
+  <div class="adminside">
+    <h4>All curses have a beginning, middle and ending...</h4>
+    <p>The three parts of each curse will be generated at random, so be sure to write parts that can function as independent pieces!</p>
+    <p><strong>Important:</strong> punctuation is not built in between the curse sections &mdash; you must include punctuation (ex. a comma after a beginning or an exclamation point after an ending) in your text.</p>
+  </div>
 
-<% end %>
+  <h1>Create a new middle:</h1>
+  <%= form_for(@middle) do |f| %>
+
+    <p><%= f.text_area :body %></p>
+    <p><%= f.submit 'Save' %></p>
+
+  <% end %>
+  Or... <%= link_to "cancel and go back to all Middles", middles_path %>
+</div>

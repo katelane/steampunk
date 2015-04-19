@@ -11,7 +11,6 @@ class BeginningsController < ApplicationController
   def create
     @beginning = Beginning.new(beginning_params)
     if @beginning.save
-      flash[:notice] = "A new beginning has been created."
       redirect_to beginnings_path
     else
       render :new
@@ -29,7 +28,6 @@ class BeginningsController < ApplicationController
   def update
     @beginning = Beginning.find params[:id]
     if @beginning.update_attributes(beginning_params)
-      flash[:notice] = "Beginning has been updated."
       redirect_to beginning_path(@beginning)
     else
       render :edit
@@ -40,7 +38,6 @@ class BeginningsController < ApplicationController
   def destroy
     beginning = Beginning.find params[:id]
     beginning.destroy
-    flash[:notice] = "The beginning '#{beginning}' has been deleted."
     redirect_to beginnings_path
   end
 

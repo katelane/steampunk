@@ -1,4 +1,14 @@
-<h1>Ending:</h1>
-<p><%= @ending.body %></p>
-<%= link_to "Edit", edit_ending_path(@ending) %> |
-<%= link_to "Back to Endings List", endings_path %>
+<div class="adminheader"></div>
+<div class="admin">
+
+  <div class="adminside">
+    <h4>All curses have a beginning, middle and ending...</h4>
+  </div>
+
+  <h1>Your curse delivers this final blow:</h1>
+  <h3><%= @ending.body %></h3>
+  <%= link_to "Edit", edit_ending_path(@ending) %> |
+  <%= link_to "Delete", ending_path(@ending), method: :delete, data: {confirm: "Really delete this item?"} %> |
+  <%= link_to "Return to all Endings", endings_path %>
+
+  </div>
