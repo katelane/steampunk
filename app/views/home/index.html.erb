@@ -9,7 +9,13 @@
 <div class="container">
   <div class="curse">
     <%= Beginning.order("RANDOM()").first.body %> <%= Middle.order("RANDOM()").first.body %> <%= Ending.order("RANDOM()").first.body %>
+    <br>
   </div>
+  <p class="regenerate"> <%= link_to "Generate a new curse", root_path %></p>
+  <p class="share">Share:
+    <%= link_to(image_tag("icon_twitter.png", :alt => "Share on Twitter"), "http://www.twitter.com/") %>
+    <%= link_to(image_tag("icon_fb.png", :alt => "Share on Facebook"), "http://www.facebook.com/") %>
+  </p>
 </div>
 
 <footer>
