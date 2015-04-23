@@ -1,0 +1,170 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #5d360d;
+  font-family: 'Goudy Bookletter 1911', serif;
+  color: #000;
+  background-image: url("leather_bkg.jpg");
+}
+
+nav {
+  height: 100px;
+  float: right;
+}
+
+.flash {
+  text-align: right;
+  padding-right: 50px;
+  background: #000;
+  font-style: italic;
+  color: #d9b073;
+}
+
+.container {
+  background-image: url("angrymanframe.png");
+  width: 1117px;
+  height: 634px;
+  margin: 0 auto;
+}
+
+#curse {
+  padding-top: 200px;
+  margin-left: 500px;
+  margin-right: 150px;
+  font-size: 1.2em;
+  min-height: 100px;
+}
+
+.regenerate {
+  text-align: center;
+  font-size: .9em;
+  margin-left: 500px;
+  margin-right: 150px;
+}
+
+.regenerate a {
+  text-decoration: none;
+  color: #000;
+  padding: 5px 10px;
+  background: #dccaa0;
+  border-radius: 10px;
+}
+
+.regenerate a:hover {
+  background: #e0c174;
+}
+
+.share {
+  margin-left: 800px;
+  margin-right: 150px;
+  margin-top: -15px;
+  text-align: right;
+  font-size: .8em;
+}
+
+.share li {
+  display:block;
+  float: left;
+  margin-left: 3px;
+}
+
+.adminheader {
+  background-image: url("adminframe.png");
+  margin: 0 auto;
+  padding-right: 10px;
+  height: 150px;
+  text-align: right;
+  font-style: italic;
+  color: #d9b073;
+}
+
+.adminheader a {
+  text-decoration: none;
+  color: #6e5e4c;
+  font-size: 1.1em;
+}
+
+.adminheader a:hover {
+  text-decoration: none;
+  color: #de7303;
+}
+
+.admin {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px;
+  background: #e7d4a7;
+  border: 5px solid #77562b;
+  border-radius: 25px;
+  min-height: 300px;
+}
+
+.admin a {
+  text-decoration: none;
+  color: #6e5e4c;
+  font-size: 1.1em;
+}
+
+.admin a:hover {
+  text-decoration: none;
+  color: #de7303;
+}
+
+.adminside {
+  float: right;
+  width: 30%;
+  text-align: center;
+  border-left: 1px solid #d9b073;
+  padding: 10px;
+}
+
+.adminside p {
+  font-size: .8em;
+}
+
+footer {
+  width: 80%;
+  margin: -50px auto 0 auto;
+  text-align: center;
+}
+
+footer p {
+  line-height: .05em;
+  color: #77562b;
+}
+
+footer img {
+  border: 2px solid #77562b;
+  display: block;
+  margin: 0 auto;
+}
+
+footer a {
+  text-decoration: none;
+  color: #77562b;
+}
+
+footer a:hover {
+  color: #6e5e4c;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
