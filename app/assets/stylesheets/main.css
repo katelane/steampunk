@@ -12,6 +12,15 @@ body {
   background-image: url("leather_bkg.jpg");
 }
 
+a {
+  text-decoration: none;
+  color: #77562b;
+}
+
+a:hover {
+  color: #6e5e4c;
+}
+
 nav {
   height: 100px;
   float: right;
